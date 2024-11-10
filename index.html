@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Resume Builder</h1>
+    <form id="resumeForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" required>
+      </div>
+      <div class="form-group">
+        <label for="summary">Summary</label>
+        <textarea id="summary" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills (Comma separated)</label>
+        <input type="text" id="skills" placeholder="e.g., JavaScript, CSS, HTML" required>
+      </div>
+      <div class="form-group">
+        <label for="education">Education</label>
+        <input type="text" id="education" placeholder="e.g., B.Sc. in Computer Science" required>
+      </div>
+      <div class="form-group">
+        <label for="workExperience">Work Experience</label>
+        <textarea id="workExperience" rows="4" placeholder="Describe your work experience"></textarea>
+      </div>
+    </form>
+    <div class="button-container">
+      <button id="shareBtn">Share Link</button>
+      <button id="generateBtn">Generate</button>
+      <button id="downloadBtn">Download PDF</button>
+    </div>
+    <div id="resumePreview" class="resume-preview">
+      <!-- Resume Preview Will Go Here -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
